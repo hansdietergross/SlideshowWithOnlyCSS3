@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+  background: linear-gradient(45deg, rgba(128, 128, 128, 0.226), rgb(65, 64, 64));
+  height: 100vh;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  padding: 15px;
+  font-family: "Raleway";
+  font-size: 50px;
+  font-size: 500;
+  color: #fff;
+  text-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slides-container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 102px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 2s;
+  box-shadow: 5px 5px 20px black;
+  text-align: center;
+}
+
+.slide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 2s 2s;
+}
+
+img {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input {  
+  /* Insivible check buttons: Not needed here! Not even opacity.... only for getting no waring! */
+  opacity: 0; 
+}
+
+[id^="buttonID"]:checked + .slide { 
+  opacity: 1;
+  transition: all 2s;
+}
+
+
+.navigationbar {
+  background: rgba(8,8,8,0.5);
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 900;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.navigationbar label {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 4.25em;
+  font-size: 1.3em;
+  padding: 0 20px;
+  font-family: "Raleway";
+  height: 100%;
+}
+.navigationbar label:hover {
+  background: #2e353b;  
+}
