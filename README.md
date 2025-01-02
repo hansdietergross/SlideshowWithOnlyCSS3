@@ -9,8 +9,6 @@ A responsive image slider showcasing autumn landscapes from October 30, 2023, fe
 
 ## Preview
 ![Gallery Preview](preview.gif)
-![Gallery Preview](preview.png)
-
 
 ## Features
 - Navigation bar with labeled image selection
